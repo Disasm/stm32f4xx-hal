@@ -105,8 +105,14 @@ pub mod qei;
     feature = "synopsys-usb-otg",
     any(
         feature = "stm32f401",
+        feature = "stm32f405",
         feature = "stm32f407",
+        feature = "stm32f415",
+        feature = "stm32f417",
+        feature = "stm32f427",
         feature = "stm32f429",
+        feature = "stm32f437",
+        feature = "stm32f439",
         feature = "stm32f446"
     )
 ))]
