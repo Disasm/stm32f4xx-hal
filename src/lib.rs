@@ -103,7 +103,12 @@ pub mod timer;
 pub mod qei;
 #[cfg(all(
     feature = "synopsys-usb-otg",
-    any(feature = "stm32f401", feature = "stm32f429", feature = "stm32f446")
+    any(
+        feature = "stm32f401",
+        feature = "stm32f407",
+        feature = "stm32f429",
+        feature = "stm32f446"
+    )
 ))]
 pub mod usb;
 #[cfg(feature = "device-selected")]
