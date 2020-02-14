@@ -55,6 +55,8 @@ arrayvec = { version = "0.5.1", default-features = false }
 panic-halt = "0.2.0"
 ssd1306 = "0.2.6"
 embedded-graphics = "0.4.9"
+usb-device = "0.2.5"
+usbd-serial = "0.1.0"
 
 [features]
 device-selected = []
@@ -79,6 +81,10 @@ stm32f479 = ["stm32f4/stm32f469", "device-selected"]
 
 usb_fs = ["synopsys-usb-otg", "synopsys-usb-otg/fs"]
 usb_hs = ["synopsys-usb-otg", "synopsys-usb-otg/hs"]
+
+[[example]]
+name = "usb_serial"
+required-features = ["stm32f429", "rt", "usb_fs"]
 
 [profile.dev]
 debug = true
