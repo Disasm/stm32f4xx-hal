@@ -105,6 +105,7 @@ pub mod i2c;
         feature = "stm32f429",
         feature = "stm32f437",
         feature = "stm32f439",
+        feature = "stm32f446",
     )
 ))]
 pub mod otg_fs;
@@ -119,6 +120,7 @@ pub mod otg_fs;
         feature = "stm32f429",
         feature = "stm32f437",
         feature = "stm32f439",
+        feature = "stm32f446",
     )
 ))]
 pub mod otg_hs;
