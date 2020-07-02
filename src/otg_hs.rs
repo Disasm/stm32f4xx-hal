@@ -41,6 +41,10 @@ unsafe impl UsbPeripheral for USB {
             rcc.ahb1rstr.modify(|_, w| w.otghsrst().clear_bit());
         });
     }
+
+    fn ahb_frequency_hz(&self) -> u32 {
+        48_000_000
+    }
 }
 
 pub type UsbBusType = UsbBus<USB>;
